@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VeiculosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [VeiculosController::class, 'index']);
+Route::get('/add', [VeiculosController::class, 'create']);
+Route::get('/update/{id}', [VeiculosController::class, 'show'])->name('VeiculoController.show');
+Route::post('/addveiculo', [VeiculosController::class, 'store'])->name('VeiculoController.store');
+Route::post('/delete/{id}', [VeiculosController::class, 'delete'])->name('VeiculoController.delete');
+Route::post('/update/{id}', [VeiculosController::class, 'update'])->name('VeiculoController.update');
