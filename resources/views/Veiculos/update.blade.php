@@ -14,7 +14,7 @@
       <input name="ano_car" class="form-control my-4" value="{{ $veiculo->ano_carro }}" placeholder="Ano de fabricação" type="text">
       <input name="preco_car" class="form-control my-4" value="{{ $veiculo->preco_carro }}" placeholder="Preço do veículo" type="text">
       <input name="chassi_car" class="form-control my-4" value="{{ $veiculo->chassi_carro }}" placeholder="Nº do Chassi" type="text">
-      <div class="row">
+      <div>
         <button class="btn btn-success" type="submit">Atualizar</button>
         <button class="btn btn-danger" type="button">Cancelar</button>
       </div>

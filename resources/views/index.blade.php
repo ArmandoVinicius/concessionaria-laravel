@@ -32,7 +32,7 @@
               @csrf
               <button class="btn btn-danger" type="submit">Deletar</button> 
               <a href="{{route('VeiculoController.show', [ 'id' => $veiculo->id ])}}">
-                <button class="btn btn-primary">Editar</button>
+                <button class="btn btn-primary" type="button">Editar</button>
               </a>
             </form>
           </td>
