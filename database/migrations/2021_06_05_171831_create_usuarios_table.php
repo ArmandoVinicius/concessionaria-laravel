@@ -23,6 +23,9 @@ class CreateUsuariosTable extends Migration
             $table->string("login_user");
             $table->string("senha_user");
             $table->integer("cargo")->default(0);
+            $table->string("token");
+            $table->boolean("activated");
+            $table->timestamp("deleted_at");
             $table->timestamps();
         });
     }

@@ -1,0 +1,25 @@
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    font-weight: bold;
+    color: white !important;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d1d1d1;
+    color: #a9a9a9;
+    text-align: left;
+}
+
+#footer p {
+    margin: 0 10px;
+    padding: 4px;
+}
+
+li > a > i {
+    font-size: 14px;
+    margin-right: 4px;
+    align-self: center;
+}

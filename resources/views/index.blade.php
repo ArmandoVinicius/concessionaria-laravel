@@ -1,9 +1,10 @@
 @include('partials.header')
 
-<div class="container mx-auto">
+<div class="m-4">
+Welcome {{ Auth::user()->nome_user }}
   <div class="card">
   <a href="/add">
-    <button class="btn btn-primary">Adicionar</button>
+    <button class="btn btn-primary mt-4 ms-3">Adicionar</button>
   </a>
   <div class="card-body">
   <table id="table" class="table">
@@ -18,7 +19,7 @@
       <th scope="col">Ação</th>
     </thead>
     <tbody>
-        @foreach($veiculos as $veiculo)
+      @foreach($veiculos as $veiculo)
       <tr>
           <td scope="row">{{ $veiculo->id }}</td>
           <td>{{ $veiculo->modelo_carro }}</td>

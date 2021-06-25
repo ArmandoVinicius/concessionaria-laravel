@@ -21,6 +21,7 @@ class CreateVeiculosTable extends Migration
             $table->string("ano_carro");
             $table->integer("preco_carro");
             $table->string("chassi_carro");
+            $table->boolean("esta_disponivel")->default(1);
             $table->timestamps();
         });
     }

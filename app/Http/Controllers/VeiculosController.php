@@ -14,6 +14,12 @@ class VeiculosController extends Controller
         return view("index")->with('veiculos', $veiculos);
     }
 
+    public function list() {
+        $veiculos = veiculos::all();
+        
+        return view("Veiculos.veiculos")->with('veiculos', $veiculos);
+    }
+
     public function create() {
         return view("Veiculos.add");
     }
